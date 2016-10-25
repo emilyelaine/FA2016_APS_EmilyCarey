@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Tropics Trail.xcscheme</key>
+		<key>TropicsTrail.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2A282C751DB5BBEF0023A5E0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2A282C891DB5BBEF0023A5E0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2A282C941DB5BBEF0023A5E0</key>
+		<key>2AC713DF1DBF08D800756E2B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

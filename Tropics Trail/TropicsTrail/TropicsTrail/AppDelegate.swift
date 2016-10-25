@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Tropics Trail
+//  TropicsTrail
 //
-//  Created by Emily Carey on 10/17/16.
+//  Created by Emily Carey on 10/24/16.
 //  Copyright © 2016 Emily Carey. All rights reserved.
 //
 

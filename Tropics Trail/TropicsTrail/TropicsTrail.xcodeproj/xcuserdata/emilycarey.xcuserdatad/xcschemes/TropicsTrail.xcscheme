@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A282C751DB5BBEF0023A5E0"
-               BuildableName = "Tropics Trail.app"
-               BlueprintName = "Tropics Trail"
-               ReferencedContainer = "container:Tropics Trail.xcodeproj">
+               BlueprintIdentifier = "2AC713DF1DBF08D800756E2B"
+               BuildableName = "TropicsTrail.app"
+               BlueprintName = "TropicsTrail"
+               ReferencedContainer = "container:TropicsTrail.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A282C891DB5BBEF0023A5E0"
-               BuildableName = "Tropics TrailTests.xctest"
-               BlueprintName = "Tropics TrailTests"
-               ReferencedContainer = "container:Tropics Trail.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A282C941DB5BBEF0023A5E0"
-               BuildableName = "Tropics TrailUITests.xctest"
-               BlueprintName = "Tropics TrailUITests"
-               ReferencedContainer = "container:Tropics Trail.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A282C751DB5BBEF0023A5E0"
-            BuildableName = "Tropics Trail.app"
-            BlueprintName = "Tropics Trail"
-            ReferencedContainer = "container:Tropics Trail.xcodeproj">
+            BlueprintIdentifier = "2AC713DF1DBF08D800756E2B"
+            BuildableName = "TropicsTrail.app"
+            BlueprintName = "TropicsTrail"
+            ReferencedContainer = "container:TropicsTrail.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A282C751DB5BBEF0023A5E0"
-            BuildableName = "Tropics Trail.app"
-            BlueprintName = "Tropics Trail"
-            ReferencedContainer = "container:Tropics Trail.xcodeproj">
+            BlueprintIdentifier = "2AC713DF1DBF08D800756E2B"
+            BuildableName = "TropicsTrail.app"
+            BlueprintName = "TropicsTrail"
+            ReferencedContainer = "container:TropicsTrail.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A282C751DB5BBEF0023A5E0"
-            BuildableName = "Tropics Trail.app"
-            BlueprintName = "Tropics Trail"
-            ReferencedContainer = "container:Tropics Trail.xcodeproj">
+            BlueprintIdentifier = "2AC713DF1DBF08D800756E2B"
+            BuildableName = "TropicsTrail.app"
+            BlueprintName = "TropicsTrail"
+            ReferencedContainer = "container:TropicsTrail.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
