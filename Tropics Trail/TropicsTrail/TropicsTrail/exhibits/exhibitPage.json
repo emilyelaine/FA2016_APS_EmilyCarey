@@ -3,17 +3,19 @@
 		"exhibitName": "Lemurs",
 		"exhibitImage": "../Assets.xcassets/lemurs.jpg",
 		"exhibitOverview": "Lemurs are small primates that are only found on the island of Madagascar and the Comoro Islands.  There are five families of Lemurs and about 50 different individual species that make up those families.  Unlike monkeys, Lemurs cannot hang by their tail but do have opposable thumbs and toes. The Lemur’s physical appearance most closely resembles that of our ancient primate ancestors.",
-
-		"fact1": "Lemurs cannot hang by their tail but do have opposable thumbs and toes.",
-		"fact2": "Ring-Tailed Lemurs live in groups called troops."
+        "facts": {
+            "fact1": "Lemurs cannot hang by their tail but do have opposable thumbs and toes.",
+            "fact2": "Ring-Tailed Lemurs live in groups called troops."
+        }
 	}
 
 	"Crocodiles" : {
 		"exhibitName": "Crocodiles",
 		"exhibitImage": "../Assets.xcassets/crocodiles.jpg",
 		"exhibitOverview": "Crocodiles are large aquatic reptiles and can be found throughout Africa, Asia, the Americas and Australia.  Crocodiles across the world are suffering from habitat destruction and hunting for their meat and skin.  Some species, depending on the region are currently considered Vulnerable but additional research is needed to help address their conservation needs as it varies from area to area.",
-	
-		"fact1": "If you take a close look at a crocodile’s face, you will notice that it has a bit of a V-shape to it.  Their snouts are longer and narrower than an Alligator which also has more of a U-shaped snout."
+        "facts": {
+            "fact1": "If you take a close look at a crocodile’s face, you will notice that it has a bit of a V-shape to it.  Their snouts are longer and narrower than an Alligator which also has more of a U-shaped snout."
+        }
 	}
 
 	"Gibbons": {
@@ -21,9 +23,11 @@
 		"exhibitImage": "../Assets.xcassets/gibbons.jpg",
 		"exhibitOverview": "White-cheeked gibbons are one of eleven species of gibbon and critically endangered. These long-armed apes are made for life in the trees, suspending their bodies and swinging easily from one hold to another.",
 
-		"fact1": "Gibbons avoid crossing water, and major rivers usually separate each gibbon species in the wild.",
-		"fact2": "Gibbons are not monkeys! They’re actually small apes. Apes don’t have tails while monkeys do.",
-		"fact3": "It’s easy to tell who’s who with an adult pair of White-cheeked gibbons. As with three other species of gibbons, the males and females are different colors. Male White-cheeked gibbons are black with white cheek patches, while females are buff with a black spot on the top of the head."
+        "facts": {
+            "fact1": "Gibbons avoid crossing water, and major rivers usually separate each gibbon species in the wild.",
+            "fact2": "Gibbons are not monkeys! They’re actually small apes. Apes don’t have tails while monkeys do.",
+            "fact3": "It’s easy to tell who’s who with an adult pair of White-cheeked gibbons. As with three other species of gibbons, the males and females are different colors. Male White-cheeked gibbons are black with white cheek patches, while females are buff with a black spot on the top of the head."
+        }
 	}
 
 	"Birds": {

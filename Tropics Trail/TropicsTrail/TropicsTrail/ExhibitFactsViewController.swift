@@ -17,7 +17,10 @@ class ExhibitFactsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+        if mapLemur == true {
+            exhibitName: "
+        }
         
         
         // Do any additional setup after loading the view.

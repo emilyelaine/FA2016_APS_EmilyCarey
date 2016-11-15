@@ -182,7 +182,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fua-dl-Was" kind="show" id="oE9-95-Bhj"/>
+                                    <action selector="lemurSelected:" destination="z78-CR-aeR" eventType="touchUpInside" id="7jL-WD-lLp"/>
+                                    <segue destination="fua-dl-Was" kind="show" id="oiB-8L-k2h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyc-Af-Wo7">
@@ -194,7 +195,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fua-dl-Was" kind="show" id="4fr-8M-Fya"/>
+                                    <action selector="crocodileSelected:" destination="z78-CR-aeR" eventType="touchUpInside" id="zSp-Ov-wu0"/>
+                                    <segue destination="fua-dl-Was" kind="show" id="bil-rZ-wyR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWa-mP-PXI">
@@ -206,7 +208,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fua-dl-Was" kind="show" id="Ve4-C2-kAM"/>
+                                    <action selector="gibbonSelected:" destination="z78-CR-aeR" eventType="touchUpInside" id="KJo-ZB-oLu"/>
+                                    <segue destination="fua-dl-Was" kind="show" id="ykR-OP-jIh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVp-ax-PmV">
@@ -218,6 +221,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="birdSelected:" destination="z78-CR-aeR" eventType="touchUpInside" id="Bnm-Wj-32q"/>
                                     <segue destination="fua-dl-Was" kind="show" id="Sjk-An-JTS"/>
                                 </connections>
                             </button>
@@ -230,6 +234,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="tropicalReefSelected:" destination="z78-CR-aeR" eventType="touchUpInside" id="UHQ-bQ-Vwq"/>
                                     <segue destination="fua-dl-Was" kind="show" id="8ZY-8C-lwT"/>
                                 </connections>
                             </button>
@@ -242,6 +247,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="nocturnalSelected:" destination="z78-CR-aeR" eventType="touchUpInside" id="PgX-ld-hfY"/>
                                     <segue destination="fua-dl-Was" kind="show" id="P0I-SV-VhV"/>
                                 </connections>
                             </button>
@@ -1033,7 +1039,7 @@
         <image name="tropics-map" width="1242" height="2208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oE9-95-Bhj"/>
+        <segue reference="ykR-OP-jIh"/>
         <segue reference="mF5-bX-xrr"/>
         <segue reference="q74-hL-ZNh"/>
     </inferredMetricsTieBreakers>
