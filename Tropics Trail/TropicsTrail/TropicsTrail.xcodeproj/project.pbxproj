@@ -15,7 +15,6 @@
 		2A259CE11DD58E0D006A309A /* SelectAllMinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A259CE01DD58E0D006A309A /* SelectAllMinViewController.swift */; };
 		2A259CE31DD58E3C006A309A /* FillInBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A259CE21DD58E3C006A309A /* FillInBlankViewController.swift */; };
 		2A259CE51DD58E62006A309A /* FreeSelectImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A259CE41DD58E62006A309A /* FreeSelectImgViewController.swift */; };
-		2A259CEA1DD9744E006A309A /* exhibitPage.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A259CE81DD9744E006A309A /* exhibitPage.json */; };
 		2A5997131DC839EE0087E74F /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5997121DC839EE0087E74F /* ChallengeViewController.swift */; };
 		2A5997151DCC36A00087E74F /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5997141DCC36A00087E74F /* resultsViewController.swift */; };
 		2AC713E41DBF08D800756E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713E31DBF08D800756E2B /* AppDelegate.swift */; };
@@ -29,6 +28,7 @@
 		2AC714001DC672F900756E2B /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713FF1DC672F900756E2B /* HowToPlayViewController.swift */; };
 		2AC714021DC6C31F00756E2B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC714011DC6C31F00756E2B /* MapViewController.swift */; };
 		2AC714041DC6C4B300756E2B /* ExhibitFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC714031DC6C4B300756E2B /* ExhibitFactsViewController.swift */; };
+		FA8FA0FC1DE03F8C00637CD8 /* json in Resources */ = {isa = PBXBuildFile; fileRef = FA8FA0FB1DE03F8C00637CD8 /* json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,6 @@
 		2A259CE01DD58E0D006A309A /* SelectAllMinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAllMinViewController.swift; sourceTree = "<group>"; };
 		2A259CE21DD58E3C006A309A /* FillInBlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillInBlankViewController.swift; sourceTree = "<group>"; };
 		2A259CE41DD58E62006A309A /* FreeSelectImgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSelectImgViewController.swift; sourceTree = "<group>"; };
-		2A259CE81DD9744E006A309A /* exhibitPage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exhibitPage.json; sourceTree = "<group>"; };
 		2A5997121DC839EE0087E74F /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		2A5997141DCC36A00087E74F /* resultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
 		2AC713E01DBF08D800756E2B /* TropicsTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TropicsTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,12 +49,13 @@
 		2AC713ED1DBF08D800756E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC713EF1DBF08D800756E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPageViewController.swift; sourceTree = "<group>"; };
-		2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower Bold.ttf"; path = "../../../../../../../Downloads/moon_flower/Moon Flower Bold.ttf"; sourceTree = "<group>"; };
-		2AC713FA1DC5590F00756E2B /* Moon Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower.ttf"; path = "../../../../../../../Downloads/moon_flower/Moon Flower.ttf"; sourceTree = "<group>"; };
+		2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower Bold.ttf"; path = "../../../../../../../Users/robert.algeo/Downloads/Moon Flower Bold.ttf"; sourceTree = "<group>"; };
+		2AC713FA1DC5590F00756E2B /* Moon Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower.ttf"; path = "../../../../../../../Users/robert.algeo/Downloads/Moon Flower.ttf"; sourceTree = "<group>"; };
 		2AC713FD1DC6536D00756E2B /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
 		2AC713FF1DC672F900756E2B /* HowToPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		2AC714011DC6C31F00756E2B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2AC714031DC6C4B300756E2B /* ExhibitFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitFactsViewController.swift; sourceTree = "<group>"; };
+		FA8FA0FB1DE03F8C00637CD8 /* json */ = {isa = PBXFileReference; lastKnownFileType = folder; path = json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +69,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A259CE71DD9744E006A309A /* exhibits */ = {
-			isa = PBXGroup;
-			children = (
-				2A259CE81DD9744E006A309A /* exhibitPage.json */,
-			);
-			path = exhibits;
-			sourceTree = "<group>";
-		};
 		2AC713D71DBF08D800756E2B = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +88,7 @@
 		2AC713E21DBF08D800756E2B /* TropicsTrail */ = {
 			isa = PBXGroup;
 			children = (
-				2A259CE71DD9744E006A309A /* exhibits */,
+				FA8FA0FB1DE03F8C00637CD8 /* json */,
 				2AC713E31DBF08D800756E2B /* AppDelegate.swift */,
 				2AC713E71DBF08D800756E2B /* Main.storyboard */,
 				2AC713EA1DBF08D800756E2B /* Assets.xcassets */,
@@ -150,7 +142,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Emily Carey";
 				TargetAttributes = {
 					2AC713DF1DBF08D800756E2B = {
@@ -186,7 +178,7 @@
 				2AC713EE1DBF08D800756E2B /* LaunchScreen.storyboard in Resources */,
 				2AC713FB1DC5590F00756E2B /* Moon Flower Bold.ttf in Resources */,
 				2AC713EB1DBF08D800756E2B /* Assets.xcassets in Resources */,
-				2A259CEA1DD9744E006A309A /* exhibitPage.json in Resources */,
+				FA8FA0FC1DE03F8C00637CD8 /* json in Resources */,
 				2AC713E91DBF08D800756E2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -307,6 +300,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
