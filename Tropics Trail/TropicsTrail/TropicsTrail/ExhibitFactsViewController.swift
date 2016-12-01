@@ -15,11 +15,20 @@ class ExhibitFactsViewController: UIViewController {
     @IBOutlet weak var exhibitOverview: UILabel!
     
     //Function To Set Copy and Images
-    func setExhibitCopy(name: String, overview: String) {
+    func setExhibitCopy(name: String, overview: String, image: String) {
         exhibitName.text = name
         exhibitOverview.text = overview
-        let image = UIImage(named:"Assets.xcassets/lemurs.jpg")
-        exhibitImage.image = image
+        exhibitOverview.sizeToFit()
+        
+        //This line of code places the Exhibit Facts below the Exhibit Overview by redrawing it based on it's own location and the bottom of the Overview
+        exhibitFacts.frame = CGRect(x:exhibitFacts.frame.origin.x,y:exhibitOverview.frame.origin.y + exhibitOverview.frame.size.height,width:exhibitFacts.frame.size.width,height:exhibitFacts.frame.size.height)
+        
+        //This line then streches the fact label to fit its content
+        exhibitFacts.sizeToFit()
+        
+        //This line sets the Exhibit Image to the image passed to the function
+        exhibitImage.image = UIImage(named:image)
+        
     }
     
 
@@ -63,7 +72,7 @@ else {
                        // UIImage * myImage = [UIImage imageNamed: imageURL];
                         //Runs the function that sets the actual copy for the UI elements
                         //You will have to add the remaining attributes and pass them to the function
-                        self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String)
+                        self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String, image: selectedExhibit["image"] as! String)
 
                     }
                     

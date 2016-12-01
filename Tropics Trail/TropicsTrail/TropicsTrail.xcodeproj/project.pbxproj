@@ -20,13 +20,13 @@
 		2AC713E91DBF08D800756E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713E71DBF08D800756E2B /* Main.storyboard */; };
 		2AC713EB1DBF08D800756E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713EA1DBF08D800756E2B /* Assets.xcassets */; };
 		2AC713F81DC0261E00756E2B /* LoadPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */; };
-		2AC713FB1DC5590F00756E2B /* Moon Flower Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */; };
-		2AC713FC1DC5590F00756E2B /* Moon Flower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713FA1DC5590F00756E2B /* Moon Flower.ttf */; };
 		2AC713FE1DC6536D00756E2B /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713FD1DC6536D00756E2B /* AgeSelectionViewController.swift */; };
 		2AC714001DC672F900756E2B /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713FF1DC672F900756E2B /* HowToPlayViewController.swift */; };
 		2AC714021DC6C31F00756E2B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC714011DC6C31F00756E2B /* MapViewController.swift */; };
 		2AC714041DC6C4B300756E2B /* ExhibitFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC714031DC6C4B300756E2B /* ExhibitFactsViewController.swift */; };
 		2AF02D5B1DE3DC050063F2B1 /* exhibits in Resources */ = {isa = PBXBuildFile; fileRef = 2AF02D5A1DE3DC050063F2B1 /* exhibits */; };
+		FA79ECBD1DEFE2F900B503EA /* Moon Flower Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA79ECBB1DEFE2F900B503EA /* Moon Flower Bold.ttf */; };
+		FA79ECBE1DEFE2F900B503EA /* Moon Flower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA79ECBC1DEFE2F900B503EA /* Moon Flower.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,13 +45,13 @@
 		2AC713EA1DBF08D800756E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC713EF1DBF08D800756E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPageViewController.swift; sourceTree = "<group>"; };
-		2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower Bold.ttf"; path = "../../../../../../../Downloads/moon_flower/Moon Flower Bold.ttf"; sourceTree = "<group>"; };
-		2AC713FA1DC5590F00756E2B /* Moon Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower.ttf"; path = "../../../../../../../Downloads/moon_flower/Moon Flower.ttf"; sourceTree = "<group>"; };
 		2AC713FD1DC6536D00756E2B /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
 		2AC713FF1DC672F900756E2B /* HowToPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		2AC714011DC6C31F00756E2B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2AC714031DC6C4B300756E2B /* ExhibitFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitFactsViewController.swift; sourceTree = "<group>"; };
 		2AF02D5A1DE3DC050063F2B1 /* exhibits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = exhibits; sourceTree = "<group>"; };
+		FA79ECBB1DEFE2F900B503EA /* Moon Flower Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Flower Bold.ttf"; sourceTree = "<group>"; };
+		FA79ECBC1DEFE2F900B503EA /* Moon Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Flower.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +84,14 @@
 		2AC713E21DBF08D800756E2B /* TropicsTrail */ = {
 			isa = PBXGroup;
 			children = (
+				FA79ECBB1DEFE2F900B503EA /* Moon Flower Bold.ttf */,
+				FA79ECBC1DEFE2F900B503EA /* Moon Flower.ttf */,
 				2AF02D5A1DE3DC050063F2B1 /* exhibits */,
 				2AC713E31DBF08D800756E2B /* AppDelegate.swift */,
 				2AC713E71DBF08D800756E2B /* Main.storyboard */,
 				2AC713EA1DBF08D800756E2B /* Assets.xcassets */,
 				2AC713EF1DBF08D800756E2B /* Info.plist */,
 				2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */,
-				2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */,
-				2AC713FA1DC5590F00756E2B /* Moon Flower.ttf */,
 				2AC713FD1DC6536D00756E2B /* AgeSelectionViewController.swift */,
 				2AC713FF1DC672F900756E2B /* HowToPlayViewController.swift */,
 				2AC714011DC6C31F00756E2B /* MapViewController.swift */,
@@ -168,9 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC713FC1DC5590F00756E2B /* Moon Flower.ttf in Resources */,
-				2AC713FB1DC5590F00756E2B /* Moon Flower Bold.ttf in Resources */,
+				FA79ECBE1DEFE2F900B503EA /* Moon Flower.ttf in Resources */,
 				2AC713EB1DBF08D800756E2B /* Assets.xcassets in Resources */,
+				FA79ECBD1DEFE2F900B503EA /* Moon Flower Bold.ttf in Resources */,
 				2AF02D5B1DE3DC050063F2B1 /* exhibits in Resources */,
 				2AC713E91DBF08D800756E2B /* Main.storyboard in Resources */,
 			);
