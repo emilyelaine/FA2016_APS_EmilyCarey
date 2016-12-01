@@ -16,9 +16,7 @@ class ChallengeViewController: UIViewController {
     @IBOutlet weak var MultiChoice3: UIButton!
     @IBOutlet weak var MultiChoice4: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
- 
 }

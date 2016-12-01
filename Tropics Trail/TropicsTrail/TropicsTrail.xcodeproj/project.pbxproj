@@ -13,12 +13,12 @@
 		2A259CDD1DD58DA4006A309A /* FillInBlankWithGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A259CDC1DD58DA4006A309A /* FillInBlankWithGraphicViewController.swift */; };
 		2A259CDF1DD58DE3006A309A /* SelectAllTrueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A259CDE1DD58DE3006A309A /* SelectAllTrueViewController.swift */; };
 		2A259CE31DD58E3C006A309A /* FillInBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A259CE21DD58E3C006A309A /* FillInBlankViewController.swift */; };
+		2A3B14D01DEE7B0D0083B342 /* selectImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B14CF1DEE7B0D0083B342 /* selectImagesViewController.swift */; };
 		2A5997131DC839EE0087E74F /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5997121DC839EE0087E74F /* ChallengeViewController.swift */; };
 		2A5997151DCC36A00087E74F /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5997141DCC36A00087E74F /* resultsViewController.swift */; };
 		2AC713E41DBF08D800756E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713E31DBF08D800756E2B /* AppDelegate.swift */; };
 		2AC713E91DBF08D800756E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713E71DBF08D800756E2B /* Main.storyboard */; };
 		2AC713EB1DBF08D800756E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713EA1DBF08D800756E2B /* Assets.xcassets */; };
-		2AC713EE1DBF08D800756E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713EC1DBF08D800756E2B /* LaunchScreen.storyboard */; };
 		2AC713F81DC0261E00756E2B /* LoadPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */; };
 		2AC713FB1DC5590F00756E2B /* Moon Flower Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */; };
 		2AC713FC1DC5590F00756E2B /* Moon Flower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AC713FA1DC5590F00756E2B /* Moon Flower.ttf */; };
@@ -36,13 +36,13 @@
 		2A259CDC1DD58DA4006A309A /* FillInBlankWithGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillInBlankWithGraphicViewController.swift; sourceTree = "<group>"; };
 		2A259CDE1DD58DE3006A309A /* SelectAllTrueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAllTrueViewController.swift; sourceTree = "<group>"; };
 		2A259CE21DD58E3C006A309A /* FillInBlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillInBlankViewController.swift; sourceTree = "<group>"; };
+		2A3B14CF1DEE7B0D0083B342 /* selectImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectImagesViewController.swift; sourceTree = "<group>"; };
 		2A5997121DC839EE0087E74F /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		2A5997141DCC36A00087E74F /* resultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
 		2AC713E01DBF08D800756E2B /* TropicsTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TropicsTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC713E31DBF08D800756E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AC713E81DBF08D800756E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AC713EA1DBF08D800756E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AC713ED1DBF08D800756E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC713EF1DBF08D800756E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPageViewController.swift; sourceTree = "<group>"; };
 		2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Moon Flower Bold.ttf"; path = "../../../../../../../Downloads/moon_flower/Moon Flower Bold.ttf"; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 				2AC713E31DBF08D800756E2B /* AppDelegate.swift */,
 				2AC713E71DBF08D800756E2B /* Main.storyboard */,
 				2AC713EA1DBF08D800756E2B /* Assets.xcassets */,
-				2AC713EC1DBF08D800756E2B /* LaunchScreen.storyboard */,
 				2AC713EF1DBF08D800756E2B /* Info.plist */,
 				2AC713F71DC0261E00756E2B /* LoadPageViewController.swift */,
 				2AC713F91DC5590F00756E2B /* Moon Flower Bold.ttf */,
@@ -105,6 +104,7 @@
 				2A259CDC1DD58DA4006A309A /* FillInBlankWithGraphicViewController.swift */,
 				2A259CDE1DD58DE3006A309A /* SelectAllTrueViewController.swift */,
 				2A259CE21DD58E3C006A309A /* FillInBlankViewController.swift */,
+				2A3B14CF1DEE7B0D0083B342 /* selectImagesViewController.swift */,
 			);
 			path = TropicsTrail;
 			sourceTree = "<group>";
@@ -169,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC713FC1DC5590F00756E2B /* Moon Flower.ttf in Resources */,
-				2AC713EE1DBF08D800756E2B /* LaunchScreen.storyboard in Resources */,
 				2AC713FB1DC5590F00756E2B /* Moon Flower Bold.ttf in Resources */,
 				2AC713EB1DBF08D800756E2B /* Assets.xcassets in Resources */,
 				2AF02D5B1DE3DC050063F2B1 /* exhibits in Resources */,
@@ -191,6 +190,7 @@
 				2AC713FE1DC6536D00756E2B /* AgeSelectionViewController.swift in Sources */,
 				2AC714001DC672F900756E2B /* HowToPlayViewController.swift in Sources */,
 				2A259CD71DD422CE006A309A /* matchingChallengeViewController.swift in Sources */,
+				2A3B14D01DEE7B0D0083B342 /* selectImagesViewController.swift in Sources */,
 				2A259CDF1DD58DE3006A309A /* SelectAllTrueViewController.swift in Sources */,
 				2AC714021DC6C31F00756E2B /* MapViewController.swift in Sources */,
 				2A5997131DC839EE0087E74F /* ChallengeViewController.swift in Sources */,
@@ -210,14 +210,6 @@
 				2AC713E81DBF08D800756E2B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2AC713EC1DBF08D800756E2B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2AC713ED1DBF08D800756E2B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

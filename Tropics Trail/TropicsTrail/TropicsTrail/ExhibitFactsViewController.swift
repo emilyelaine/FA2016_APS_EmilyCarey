@@ -22,6 +22,8 @@ class ExhibitFactsViewController: UIViewController {
         exhibitImage.image = image
     }
     
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +51,11 @@ else {
             if let exhibits = json["exhibits"] as? NSDictionary
             {
                 
-                //Grabs the selected exhibit. Right now it's hard coded as gibbons
+                //Grabs the selected exhibit. 
                 //But in the future you will pass a variable set to the exhibit name
-                if let selectedExhibit = exhibits["lemurs"] as? NSDictionary
+            
+                print(exhibitID)
+                if let selectedExhibit = exhibits[exhibitID] as? NSDictionary
                 {
                     //Forces the UI to Reload right away
                     DispatchQueue.main.async {
@@ -60,9 +64,7 @@ else {
                         //Runs the function that sets the actual copy for the UI elements
                         //You will have to add the remaining attributes and pass them to the function
                         self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String)
-                        // self.setExhibitCopy(name: selectedExhibit["image"] as! String)
-                       // self.setExhibitCopy(overview: selectedExhibit["overview"] as! String)
-                        // self.setExhibitCopy(name: selectedExhibit["facts"] as! String)
+
                     }
                     
                 }

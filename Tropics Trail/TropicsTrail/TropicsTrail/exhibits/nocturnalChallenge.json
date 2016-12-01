@@ -1,0 +1,38 @@
+{
+	"challenge":{
+		"nocturnal":{
+			"level1":{
+				"exhibitName":"Nocturnal Animals",
+				"questionType":"fillInTheBlank",
+				"backgroundInformation":"How do you measure up against our python?  Enter your height to see how big you are compared to our python.",
+				"question1":{
+					"question":"Feet:",
+					"choices":["0","1","2","3","4","5","6","7","8"]
+				},
+				"question2":{
+					"question":"Inches:",
+					"choices":["0","1","2","3","4","5","6","7","8","9","10","11"]
+				}
+			},
+
+			"level2":{
+				"exhibitName":"Nocturnal Animals",
+				"questionType":"selectAll",
+				"question1":{
+					"quesiton":"By keeping this section of the Tropics Trail relatively dark, you are able to see some of our nocturnal animals as if it were night time.  What types of animals are you able to see? Keep in mind, it can take a bit of time to adjust to the different light. ",
+					"choices":["Two-toed Sloth", "Chinchilla", "Bermese Python"]
+				}
+			},
+
+			"level3":{
+				"exhibitName":"Nocturnal Animals",
+				"questionType":"selectAll",
+				"question1":{
+					"question":"The two-toed sloth is one slow moving animal.  To keep safe from predators, sloths have a few tricks up their sleeves to keep predators away.  Select all the answers that are true:",
+					"choices":[["Slow Moving",true], ["Excellent Camouflage",true], ["Potent Smell",false], ["Build Nests to hide in during the day",false]]
+				}
+			}
+
+		}
+	}
+}
