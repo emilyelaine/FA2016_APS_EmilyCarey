@@ -9,7 +9,7 @@
 
 import UIKit
 
-var exhibitID: String?
+var exhibitID: String!
 
 class MapViewController: UIViewController {
     

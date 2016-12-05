@@ -2,47 +2,38 @@
    "exhibits":{
       "lemurs":{
          "name":"Lemurs",
-         "image":"../Assets.xcassets/lemurs.jpg",
+         "image":"lemur",
          "overview":"Lemurs are small primates that are only found on the island of Madagascar and the Comoro Islands.  There are five families of Lemurs and about 50 different individual species that make up those families.  Unlike monkeys, Lemurs cannot hang by their tail but do have opposable thumbs and toes. The Lemur’s physical appearance most closely resembles that of our ancient primate ancestors.",
-         "facts":{
-            "1":"Lemurs cannot hang by their tail but do have opposable thumbs and toes.",
-            "2":"Ring-Tailed Lemurs live in groups called troops."
-         }
+         "facts": ["Lemurs cannot hang by their tail but do have opposable thumbs and toes.","Ring-Tailed Lemurs live in groups called troops."]
       },
       "crocodiles":{
          "name":"Crocodiles",
-         "image":"../Assets.xcassets/crocodiles.jpg",
+         "image":"crocodile",
          "overview":"Crocodiles are large aquatic reptiles and can be found throughout Africa, Asia, the Americas and Australia.  Crocodiles across the world are suffering from habitat destruction and hunting for their meat and skin.  Some species, depending on the region are currently considered Vulnerable but additional research is needed to help address their conservation needs as it varies from area to area.",
-         "facts":{
-            "1":"If you take a close look at a crocodile’s face, you will notice that it has a bit of a V-shape to it.  Their snouts are longer and narrower than an Alligator which also has more of a U-shaped snout."
-         }
+         "facts": ["If you take a close look at a crocodile’s face, you will notice that it has a bit of a V-shape to it.  Their snouts are longer and narrower than an Alligator which also has more of a U-shaped snout."]
       },
       "gibbons":{
          "name":"Gibbons",
-         "image":"../Assets.xcassets/gibbons.jpg",
+         "image":"gibbon",
          "overview":"White-cheeked gibbons are one of eleven species of gibbon and critically endangered. These long-armed apes are made for life in the trees, suspending their bodies and swinging easily from one hold to another.",
-         "facts":{
-            "1":"Gibbons avoid crossing water, and major rivers usually separate each gibbon species in the wild.",
-            "2":"Gibbons are not monkeys! They’re actually small apes. Apes don’t have tails while monkeys do.",
-            "3":"It’s easy to tell who’s who with an adult pair of White-cheeked gibbons. As with three other species of gibbons, the males and females are different colors. Male White-cheeked gibbons are black with white cheek patches, while females are buff with a black spot on the top of the head."
-         }
+         "facts":["Gibbons avoid crossing water, and major rivers usually separate each gibbon species in the wild.","Gibbons are not monkeys! They’re actually small apes. Apes don’t have tails while monkeys do.","It’s easy to tell who’s who with an adult pair of White-cheeked gibbons. As with three other species of gibbons, the males and females are different colors. Male White-cheeked gibbons are black with white cheek patches, while females are buff with a black spot on the top of the head."]
       },
       "birds":{
          "name":"Birds of the Tropics",
-         "image":"../Assets.xcassets/birds.jpg",
-         "overview":""
+         "image":"bird",
+         "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. South America is sometimes called the 'bird continent' for its diverse range of birds. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins. "
       },
       "reef":{
          "name":"Tropical Reef",
-         "image":"../Assets.xcassets/tropicalReef.jpg",
+         "image":"reef",
          "overview":"The Pacific reef tank or Tropical Reef in the Tropics building has similarities to the Atlantic Reef exhibit in Discovery Bay.  Both tanks exhibit artificial coral reefs.  The difference is in the Oceans they represent.  The largest difference is diversity of species. Estimates of 65 to 75 species of coral and 500 to 700 reef associated fish species live in the extended  Atlantic/Caribbean coral reef area.  This is in contrast to the over 700 coral species and over 3,000 reef associated fish in the Indo-Pacific coral reefs.",
-         "factsImage":"../Assets.xcassets/tropicReefFacts.jpg"
+         "facts": ["tropicReefFacts"]
       },
       "nocturnal":{
          "name":"Nocturnal Animals",
-         "image":"../Assets.xcassets/nocturnal.jpg",
+         "image":"nocturnal",
          "overview":"Nocturnal organisms are those that are active mainly at night and sleep during the day. Their activity pattern occurs in twenty-four hour cycles, known as a circadian rhythm. Nocturnal animals include bats, cats, owls, mice, scorpions, opossums, raccoons, coyotes, cockroaches, and moths.",
-         "factsImage":"../Assets.xcassets/nocturnalFacts.jpg"
+         "facts": ["nocturnalFacts"]
       }
    }
 }

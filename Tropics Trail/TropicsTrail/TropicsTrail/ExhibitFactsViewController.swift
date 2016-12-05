@@ -11,18 +11,30 @@ class ExhibitFactsViewController: UIViewController {
     
     @IBOutlet weak var exhibitName: UILabel!
     @IBOutlet weak var exhibitImage: UIImageView!
-    @IBOutlet weak var exhibitFacts: UILabel!
     @IBOutlet weak var exhibitOverview: UILabel!
+    @IBOutlet weak var exhibitFacts: UILabel!
+
     
     //Function To Set Copy and Images
-    func setExhibitCopy(name: String, overview: String) {
+    func setExhibitCopy(name: String, overview: String, image: String, facts: String) {
         exhibitName.text = name
         exhibitOverview.text = overview
-        let image = UIImage(named:"Assets.xcassets/lemurs.jpg")
-        exhibitImage.image = image
-    }
-    
+        exhibitOverview.sizeToFit()
+        exhibitFacts.text = facts
 
+        
+        //This line of code places the Exhibit Facts below the Exhibit Overview by redrawing it based on it's own location and the bottom of the Overview
+        exhibitFacts.frame = CGRect(x:exhibitFacts.frame.origin.x,y:exhibitOverview.frame.origin.y + exhibitOverview.frame.size.height,width:exhibitFacts.frame.size.width,height:exhibitFacts.frame.size.height)
+
+        
+        //This line then streches the fact label to fit its content
+        exhibitFacts.sizeToFit()
+
+        
+        //This line sets the Exhibit Image to the image passed to the function
+        exhibitImage.image = UIImage(named:image)
+        
+    }
     
     
     override func viewDidLoad() {
@@ -33,54 +45,61 @@ class ExhibitFactsViewController: UIViewController {
         
         //Kicks off Code to Transform JSON file into readable arrays
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-    
-    //Throws an error if JSON file is missing
-       if error != nil {
-         print (error)
-}
-else {
-    //Gets the content of the JSON FILE
-    if let content = data
-    {
-        do
-        {
-            //Turns the JSON File into an array
-            let json = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
             
-            //Grabs all the exhibits
-            if let exhibits = json["exhibits"] as? NSDictionary
-            {
-                
-                //Grabs the selected exhibit. 
-                //But in the future you will pass a variable set to the exhibit name
-            
-                print(exhibitID)
-                if let selectedExhibit = exhibits[exhibitID] as? NSDictionary
+            //Throws an error if JSON file is missing
+            if error != nil {
+                print (error)
+            }
+            else {
+                //Gets the content of the JSON FILE
+                if let content = data
                 {
-                    //Forces the UI to Reload right away
-                    DispatchQueue.main.async {
-                     //   let imageURL = selectedExhibit["image"] as! String
-                       // UIImage * myImage = [UIImage imageNamed: imageURL];
-                        //Runs the function that sets the actual copy for the UI elements
-                        //You will have to add the remaining attributes and pass them to the function
-                        self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String)
+                    do
+                    {
+                        //Turns the JSON File into an array
+                        let json = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+                        
+                        //Grabs all the exhibits
+                        if let exhibits = json["exhibits"] as? NSDictionary
+                        {
+                            print(exhibits)
+                            //Grabs the selected exhibit.
+                            //But in the future you will pass a variable set to the exhibit name
+                            
+                            print(exhibitID)
+                            if let selectedExhibit = exhibits[exhibitID] as? NSDictionary
+                            {
+                                let factArray = selectedExhibit["facts"]
+                                print(factArray)
+                                
+                                var i = 0
+                                while i <= factArray.count {
+                                    print(factArray[i])
+                                    i = i + 1
+                                }
 
+                                //Forces the UI to Reload right away
+                                DispatchQueue.main.async {
+                                    //Runs the function that sets the actual copy for the UI elements
+                                    //You will have to add the remaining attributes and pass them to the function
+                                    self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String, image: selectedExhibit["image"] as! String, facts: selectedExhibit["facts"] as! String)
+                                
+                                }
+                                
+                            }
+                        }
+                        
                     }
-                    
+                    catch
+                    {
+                        print(error)
+                    }
                 }
             }
             
         }
-        catch
-        {
-            print(error)
-        }
+        
+        task.resume()
+        
     }
-}
-
-}
-
-task.resume()
-
-}
 }
