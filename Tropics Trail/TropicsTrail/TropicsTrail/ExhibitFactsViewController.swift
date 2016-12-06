@@ -13,9 +13,14 @@ class ExhibitFactsViewController: UIViewController {
     @IBOutlet weak var exhibitImage: UIImageView!
     @IBOutlet weak var exhibitOverview: UILabel!
     @IBOutlet weak var exhibitFacts: UILabel!
+ //   @IBAction func challengeType(_ sender: AnyObject) {
+   //     let viewControllerSelected = self.pushViewController(MainContentViewController, animated: true)
+   // }
 
     
     //Function To Set Copy and Images
+    var facts = "Some text"
+    
     func setExhibitCopy(name: String, overview: String, image: String, facts: String) {
         exhibitName.text = name
         exhibitOverview.text = overview
@@ -35,7 +40,6 @@ class ExhibitFactsViewController: UIViewController {
         exhibitImage.image = UIImage(named:image)
         
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,27 +66,19 @@ class ExhibitFactsViewController: UIViewController {
                         //Grabs all the exhibits
                         if let exhibits = json["exhibits"] as? NSDictionary
                         {
-                            print(exhibits)
                             //Grabs the selected exhibit.
-                            //But in the future you will pass a variable set to the exhibit name
-                            
                             print(exhibitID)
                             if let selectedExhibit = exhibits[exhibitID] as? NSDictionary
                             {
                                 let factArray = selectedExhibit["facts"]
                                 print(factArray)
-                                
-                                var i = 0
-                                while i <= factArray.count {
-                                    print(factArray[i])
-                                    i = i + 1
-                                }
+                            
 
                                 //Forces the UI to Reload right away
                                 DispatchQueue.main.async {
                                     //Runs the function that sets the actual copy for the UI elements
                                     //You will have to add the remaining attributes and pass them to the function
-                                    self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String, image: selectedExhibit["image"] as! String, facts: selectedExhibit["facts"] as! String)
+                                    self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String, image: selectedExhibit["image"] as! String, facts: self.facts as! String)
                                 
                                 }
                                 
@@ -103,3 +99,11 @@ class ExhibitFactsViewController: UIViewController {
         
     }
 }
+    //function to Choose Challenge View Controller
+    
+    
+   // func buttonChallengeClicked() {
+     //   if challengeType:select(<#T##sender: Any?##Any?#>) print("challenge type is chosen")
+    //}
+
+

@@ -4,7 +4,7 @@
          "name":"Lemurs",
          "image":"lemur",
          "overview":"Lemurs are small primates that are only found on the island of Madagascar and the Comoro Islands.  There are five families of Lemurs and about 50 different individual species that make up those families.  Unlike monkeys, Lemurs cannot hang by their tail but do have opposable thumbs and toes. The Lemur’s physical appearance most closely resembles that of our ancient primate ancestors.",
-         "facts": ["Lemurs cannot hang by their tail but do have opposable thumbs and toes.","Ring-Tailed Lemurs live in groups called troops."]
+          "facts": ["Lemurs cannot hang by their tail but do have opposable thumbs and toes.", "Ring-Tailed Lemurs live in groups called troops."]
       },
       "crocodiles":{
          "name":"Crocodiles",
@@ -19,9 +19,9 @@
          "facts":["Gibbons avoid crossing water, and major rivers usually separate each gibbon species in the wild.","Gibbons are not monkeys! They’re actually small apes. Apes don’t have tails while monkeys do.","It’s easy to tell who’s who with an adult pair of White-cheeked gibbons. As with three other species of gibbons, the males and females are different colors. Male White-cheeked gibbons are black with white cheek patches, while females are buff with a black spot on the top of the head."]
       },
       "birds":{
-         "name":"Birds of the Tropics",
+         "name":"Tropical Birds",
          "image":"bird",
-         "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. South America is sometimes called the 'bird continent' for its diverse range of birds. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins. "
+         "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. South America is sometimes called the 'bird continent' for its diverse range of birds. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins."
       },
       "reef":{
          "name":"Tropical Reef",

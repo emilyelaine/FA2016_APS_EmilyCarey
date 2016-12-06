@@ -2,7 +2,7 @@
 	"challenge":{
 		"birds":{
 			"level1":{
-				"exhibitName":"Birds of the Tropics",
+				"exhibitName":"Tropical Birds",
 				"questionType":"selectAll",
 				"question1":{
 					"question":"There are many different kinds of birds throughout the Tropics Trail.  Each bird has its own unique call. If you take time to listen, you should hear many different songs.  Try looking high and low as different birds hang out in different parts of the exhibit.  Find 3 different birds to be an official expert MN Zoo bird-watcher!",
@@ -10,7 +10,7 @@
 				}
 			}
 			"level2":{
-				"exhibitName":"Birds of the Tropics",
+				"exhibitName":"Tropical Birds",
 				"questionType":"selectAll",
 				"question1":{
 					"question":"There are many different kinds of birds throughout the Tropics Trail.  Each bird has its own unique call. If you take time to listen, you should hear many different songs.  Try looking high and low as different birds hang out in different parts of the exhibit.  Find 5 different birds to be an official expert MN Zoo bird-watcher!",
@@ -18,7 +18,7 @@
 				}
 			}
 			"level3":{
-				"exhibitName":"Birds of the Tropics",
+				"exhibitName":"Tropical Birds",
 				"questionType":"selectAll",
 				"question1":{
 					"question":"There are many different kinds of birds throughout the Tropics Trail.  Each bird has its own unique call. If you take time to listen, you should hear many different songs.  Try looking high and low as different birds hang out in different parts of the exhibit.  Find 8 different birds to be an official expert MN Zoo bird-watcher!",
