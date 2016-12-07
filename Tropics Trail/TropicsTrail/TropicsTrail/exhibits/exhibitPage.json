@@ -21,7 +21,8 @@
       "birds":{
          "name":"Tropical Birds",
          "image":"bird",
-         "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. South America is sometimes called the 'bird continent' for its diverse range of birds. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins."
+         "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. South America is sometimes called the 'bird continent' for its diverse range of birds. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins.",
+         "facts": ["birdFact1","birdFact2","birdFact3"]
       },
       "reef":{
          "name":"Tropical Reef",
