@@ -13,28 +13,35 @@ class ExhibitFactsViewController: UIViewController {
     @IBOutlet weak var exhibitImage: UIImageView!
     @IBOutlet weak var exhibitOverview: UILabel!
     @IBOutlet weak var exhibitFacts: UILabel!
- //   @IBAction func challengeType(_ sender: AnyObject) {
-   //     let viewControllerSelected = self.pushViewController(MainContentViewController, animated: true)
-   // }
 
     
     //Function To Set Copy and Images
-    var facts = "Some text"
+   // var facts = "Some text"
     
-    func setExhibitCopy(name: String, overview: String, image: String, facts: String) {
+    func setExhibitCopy(name: String, overview: String, image: String, facts: Array<Any>) {
         exhibitName.text = name
         exhibitOverview.text = overview
         exhibitOverview.sizeToFit()
-        exhibitFacts.text = facts
-
+        
+        //factCopy is an empty string to be populated with the facts
+        var factCopy = ""
+        
+        //This creates the loop that appends each fact to fact copy. var fact is created in the initializing of the loop, and factCopy
+        for fact in facts {
+            factCopy = factCopy+"• "+(fact as! String)+"\n"
+        }
+        
+        //This line adds the copy to the facts lable after the loop has completed.
+        exhibitFacts.text = factCopy
+        
         
         //This line of code places the Exhibit Facts below the Exhibit Overview by redrawing it based on it's own location and the bottom of the Overview
         exhibitFacts.frame = CGRect(x:exhibitFacts.frame.origin.x,y:exhibitOverview.frame.origin.y + exhibitOverview.frame.size.height,width:exhibitFacts.frame.size.width,height:exhibitFacts.frame.size.height)
-
+        
         
         //This line then streches the fact label to fit its content
         exhibitFacts.sizeToFit()
-
+        
         
         //This line sets the Exhibit Image to the image passed to the function
         exhibitImage.image = UIImage(named:image)
@@ -70,16 +77,12 @@ class ExhibitFactsViewController: UIViewController {
                             print(exhibitID)
                             if let selectedExhibit = exhibits[exhibitID] as? NSDictionary
                             {
-                                let factArray = selectedExhibit["facts"]
-                                print(factArray)
-                            
-
+                                
                                 //Forces the UI to Reload right away
                                 DispatchQueue.main.async {
                                     //Runs the function that sets the actual copy for the UI elements
-                                    //You will have to add the remaining attributes and pass them to the function
-                                    self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String, image: selectedExhibit["image"] as! String, facts: self.facts as! String)
-                                
+                                    self.setExhibitCopy(name: selectedExhibit["name"] as! String, overview: selectedExhibit["overview"] as! String, image: selectedExhibit["image"] as! String, facts: selectedExhibit["facts"] as! Array)
+                                    
                                 }
                                 
                             }
@@ -99,11 +102,5 @@ class ExhibitFactsViewController: UIViewController {
         
     }
 }
-    //function to Choose Challenge View Controller
-    
-    
-   // func buttonChallengeClicked() {
-     //   if challengeType:select(<#T##sender: Any?##Any?#>) print("challenge type is chosen")
-    //}
-
+//function to Choose Challenge View Controller
 
