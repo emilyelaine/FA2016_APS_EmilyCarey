@@ -1,0 +1,18 @@
+{
+	"challenge":{
+		"exhibitName":"Lemurs":{
+			"level1":{
+					"question":"Ring-Tailed Lemurs are only found on the fourth largest island in the world.  What island do the ring-tailed lemurs come from?",
+					"choices": [["Madagascar",true], ["Hawaii",false], ["Australia",false], ["New Zealand",false]]
+				},
+			"level2":{
+				"question":"Where do Ring-Tailed Lemurs like to spend their time?  Take a look in the exhibt and see if you can spot them!",
+				"choices": [["In the trees", false], ["On the ground", false], ["Underwater", false], ["Both in the trees and on the ground", true]]
+				},
+			"level3":{
+				"question":"The island country of Madagascar, located 300 miles from the coast of Africa, is the fourth largest island in the world.  Its tropical rainforests are home to many animals - but its most recognizable animals are primates known as lemurs. How many species of lemurs are still living exclusively in Madagascar?",
+				"choices": [["40",false], ["70",false], ["Less than 20", false], ["More than 100", true]]
+				}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"challenge":{
+		"lemurs":{
+			"level1":{
+				"exhibitName":"Lemurs",
+				"questionType":"multipleChoice",
+				"quesiton":{
+					"question1":"Ring-Tailed Lemurs are only found on the fourth largest island in the world.  What island do the ring-tailed lemurs come from?",
+					"choices": [["Madagascar",true], ["Hawaii",false], ["Australia",false], ["New Zealand",false]]
+				}
+			},
+			"level2":{
+				"exhibitName":"Lemurs",
+				"questionType":"fillInTheBlank",
+				"backgroundInformation":"Ring-Tailed Lemurs spend their time both in the trees, climbing, and on the ground, foraging for food.  Look around the exhibit to see where the lemurs are spending their time.",
+				"question1":{
+					"question":"How many lemurs do you see climbing, grooming, swinging or resting in the trees?",
+					"choices": ["0", "1", "2", "3", "4", "5+"]
+				},
+				"question2":{
+					"question":"How many lemurs do you see walking, or looking for food on the ground?",
+					"choices": ["0", "1", "2", "3", "4", "5+"]
+				}
+			},
+			"level3":{
+				"exhibitName":"Lemurs",
+				"questionType":"multipleChoice",
+				"question":{
+					"question1":"The island country of Madagascar, located 300 miles from the coast of Africa, is the fourth largest island in the world.  Its tropical rainforests are home to many animals - but its most recognizable animals are primates known as lemurs. How many species of lemurs are still living exclusively in Madagascar?",
+					"choices": [["40",false], ["70",false], ["Less than 20", false], ["More than 100", true]]
+				}
+			}
+		}
+	}
+}
