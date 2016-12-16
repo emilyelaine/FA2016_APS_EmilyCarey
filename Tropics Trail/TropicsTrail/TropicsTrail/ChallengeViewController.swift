@@ -27,13 +27,19 @@ class ChallengeViewController: UIViewController {
     
     // Set Level Selection based initial choice
     
-    func setChallengeCopy(name: String, question: String, choice1: String, choice2: String, choice3: String, choice4: String) {
+    func setChallengeCopy(name: String, question: String, choice1: Array<Any>, choice2: Array<Any>, choice3: Array<Any>, choice4: Array<Any>) {
         exhibitName.text = name
+//        exhibitName.sizeToFit()
         QuestionLabel.text = question
-        MultiChoice1.setTitle(choice1,for: .normal)
-        MultiChoice2.setTitle(choice2,for: .normal)
-        MultiChoice3.setTitle(choice3,for: .normal)
-        MultiChoice3.setTitle(choice4,for: .normal)
+        QuestionLabel.sizeToFit()
+        MultiChoice1.setTitle((choice1[0] as! String),for: .normal)
+        MultiChoice1.tag = choice1[1] as! Int
+        MultiChoice2.setTitle((choice2[0] as! String),for: .normal)
+        MultiChoice2.tag = choice2[1] as! Int
+        MultiChoice3.setTitle((choice3[0] as! String),for: .normal)
+        MultiChoice3.tag = choice3[1] as! Int
+        MultiChoice4.setTitle((choice4[0] as! String),for: .normal)
+        MultiChoice4.tag = choice4[1] as! Int
     
     }
     
@@ -54,7 +60,7 @@ class ChallengeViewController: UIViewController {
         
         
         //Gets the URL of the JSON File
-        let url = Bundle.main.url(forResource: exhibitChallenge, withExtension:"json", subdirectory:"challenge")
+        let url = Bundle.main.url(forResource: exhibitChallenge, withExtension:"json", subdirectory:"exhibits")
         
         //Kicks off Code to Transform JSON file into readable arrays
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -75,28 +81,41 @@ class ChallengeViewController: UIViewController {
                         //Grabs all the exhibits
                         if let challenge = json["challenge"] as? NSDictionary
                         {
-
+                            
                             //Grabs the selected exhibit.
                             print(level)
                             if let selectedLevel = challenge[level] as? NSDictionary
                             {
-                 
-                                func showChoices() {
-                                    let choices = selectedLevel["choices"]
-                                    for (index,choice) in choices.enumerate() {
-                                        printIn("(index): (choice)")
-                                    }
-                                }
+//                                print(selectedLevel["choices"])
+//                                let choices = selectedLevel["choices"] as? Array<Any>
+//                                print(test![0])
+//                                func showChoices() {
+//                                    let choices = selectedLevel["choices"]
+////                                    for (index,choice) in choices.enumerate() {
+////                                        printIn("(index): (choice)")
+////                                    }
+//                                }
                                 
-                                showChoices()
+//                                showChoices()
                                 
-                                //Forces the UI to Reload right away
-                                DispatchQueue.main.async {
-                                    //Runs the function that sets the actual copy for the UI elements
-                                    self.setChallengeCopy(name: selectedLevel["exhibitName"] as! String, question: selectedLevel["question"] as! String, choice1: selectedLevel["choices[0,0]"] as! String, choice2: selectedLevel["choices[1,0]"] as! String, choice3: selectedLevel["choices[2,0]"] as! String, choice4: selectedLevel["choices[3,0]"] as! String)
+//                                print(selectedLevel["choices"][0] as! Array)
+                                
+                                if let choices = selectedLevel["choices"] as? Array<Any> {
+                                
+//                                    print("###########")
                                     
-                                }
+                                    //Forces the UI to Reload right away
+                                    DispatchQueue.main.async {
+                                        //Runs the function that sets the actual copy for the UI elements
+                                        self.setChallengeCopy(name: challenge["exhibitName"] as! String, question: selectedLevel["question"] as! String, choice1: choices[0] as! Array, choice2: choices[1] as! Array, choice3: choices[2] as! Array, choice4: choices[3] as! Array)
+                                        
+                                    }
 
+                                
+                                
+                                }
+                                
+                                
                             
                             }
                         }
