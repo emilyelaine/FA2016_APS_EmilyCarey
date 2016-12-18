@@ -11,12 +11,14 @@ import UIKit
     var level = ""
 
     let exhibitChallenge = exhibitID+"TestChallenge"
+    var MultiChoice1Answer = 0
+    var MultiChoice2Answer = 0
+    var MultiChoice3Answer = 0
+    var MultiChoice4Answer = 0
+    var challengeAnswer = false
 
 
 class ChallengeViewController: UIViewController {
-    @IBAction func submitButton(_ sender: Any) {
-        
-}
 
     @IBOutlet weak var exhibitName: UILabel!
     @IBOutlet weak var QuestionLabel: UILabel!
@@ -25,21 +27,32 @@ class ChallengeViewController: UIViewController {
     @IBOutlet weak var MultiChoice3: UIButton!
     @IBOutlet weak var MultiChoice4: UIButton!
     
+    
     // Set Level Selection based initial choice
     
-    func setChallengeCopy(name: String, question: String, choice1: String, choice2: String, choice3: String, choice4: String) {
+    func setChallengeCopy(name: String, question: String, choice1: Array<Any>, choice2: Array<Any>, choice3: Array<Any>, choice4: Array<Any>) {
         exhibitName.text = name
         QuestionLabel.text = question
-        MultiChoice1.setTitle(choice1,for: .normal)
-        MultiChoice2.setTitle(choice2,for: .normal)
-        MultiChoice3.setTitle(choice3,for: .normal)
-        MultiChoice3.setTitle(choice4,for: .normal)
-    
+        MultiChoice1.setTitle((choice1[0] as! String),for: .normal)
+        print(choice1[1])
+        let MultiChoice1Answer = choice1[1]
+        MultiChoice2.setTitle((choice2[0] as! String),for: .normal)
+        let MultiChoice2Answer = choice2[1]
+        MultiChoice3.setTitle((choice3[0] as! String),for: .normal)
+        let MultiChoice3Answer = choice3[1]
+        MultiChoice4.setTitle((choice4[0] as! String),for: .normal)
+        let MultiChoice4Answer = choice4[1]
+
+        
+        QuestionLabel.frame = CGRect(x:exhibitName.frame.origin.x,y:exhibitName.frame.origin.y + exhibitName.frame.size.height+50,width:QuestionLabel.frame.size.width,height:QuestionLabel.frame.size.height)
+        
+        QuestionLabel.sizeToFit()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         if level1Selection == true {
             level = "level1"
         }
@@ -54,7 +67,7 @@ class ChallengeViewController: UIViewController {
         
         
         //Gets the URL of the JSON File
-        let url = Bundle.main.url(forResource: exhibitChallenge, withExtension:"json", subdirectory:"challenge")
+        let url = Bundle.main.url(forResource: exhibitChallenge, withExtension:"json", subdirectory:"exhibits")
         
         //Kicks off Code to Transform JSON file into readable arrays
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -75,29 +88,23 @@ class ChallengeViewController: UIViewController {
                         //Grabs all the exhibits
                         if let challenge = json["challenge"] as? NSDictionary
                         {
-
+                            
                             //Grabs the selected exhibit.
                             print(level)
                             if let selectedLevel = challenge[level] as? NSDictionary
                             {
-                 
-                                func showChoices() {
-                                    let choices = selectedLevel["choices"]
-                                    for (index,choice) in choices.enumerate() {
-                                        printIn("(index): (choice)")
-                                    }
-                                }
                                 
-                                showChoices()
-                                
-                                //Forces the UI to Reload right away
-                                DispatchQueue.main.async {
-                                    //Runs the function that sets the actual copy for the UI elements
-                                    self.setChallengeCopy(name: selectedLevel["exhibitName"] as! String, question: selectedLevel["question"] as! String, choice1: selectedLevel["choices[0,0]"] as! String, choice2: selectedLevel["choices[1,0]"] as! String, choice3: selectedLevel["choices[2,0]"] as! String, choice4: selectedLevel["choices[3,0]"] as! String)
+                                if let choices = selectedLevel["choices"] as? Array<Any> {
                                     
+                                    //Forces the UI to Reload right away
+                                    DispatchQueue.main.async {
+                                        //Runs the function that sets the actual copy for the UI elements
+                                        self.setChallengeCopy(name: challenge["exhibitName"] as! String, question: selectedLevel["question"] as! String, choice1: choices[0] as! Array, choice2: choices[1] as! Array, choice3: choices[2] as! Array, choice4: choices[3] as! Array)
+                                        
+                                    }
+                                    
+ 
                                 }
-
-                            
                             }
                         }
                         
@@ -113,7 +120,46 @@ class ChallengeViewController: UIViewController {
         
         task.resume()
         
+    }
+    @IBAction func MultiChoice1Selected(_ sender: Any) {
+        if MultiChoice1Answer == 0 {
+            print("That is Correct!")
+            challengeAnswer = true
         }
+        else {
+            print("That is not Correct.  Try Again!")
+        }
+    }
     
+    @IBAction func MultiChoice2Selected(_ sender: Any) {
+        if MultiChoice2Answer == 0 {
+            print("That is Correct!")
+            challengeAnswer = true
+        }
+        else {
+            print("That is not Correct.  Try Again!")
+        }
+    }
     
-}
+    @IBAction func MultiChoice3Selected(_ sender: Any) {
+        if MultiChoice3Answer == 0 {
+            print("That is Correct!")
+            challengeAnswer = true
+        }
+        else {
+            print("That is not Correct.  Try Again!")
+        }
+    }
+    
+    @IBAction func MultiChoice4Selected(_ sender: Any) {
+        if MultiChoice4Answer == 0 {
+            print("That is Correct!")
+            challengeAnswer = true
+        }
+        else {
+            print("That is not Correct.  Try Again!")
+        }
+    }
+    
+    }
+//function to Choose Challenge View Controller
