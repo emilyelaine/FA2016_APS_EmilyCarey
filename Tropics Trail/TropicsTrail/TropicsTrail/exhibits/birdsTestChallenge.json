@@ -1,0 +1,17 @@
+{
+	"challenge":{
+		"exhibitName": "Tropical Birds",
+		"level1":{
+			"question":"The Rhinoceros Hornbill is pretty easy to spot.  It has a large colorful horn on top of its beak. What do you think is the purpose of the horn?",
+			"choices":[["To break open nuts and fruit", false], ["To hide from predators", false], ["To help them fly", false], ["To make its call louder", true]]
+		},
+		"level2":{
+			"question":"Which other family of birds is similar to the Keel-billed Toucans?",
+			"choices":[["Hornbills", false], ["Pelicans", false], ["Woodpeckers", true], ["Parrots", false]]
+		},
+		"level3":{
+			"question":"Which of our birds is most closely related to the extinct Dodo, which was a large ground-dwelling pigeon?",
+			"choices":[["Victoria Crowned-pigeon", true], ["Bleeding Heart Dove", false], ["Nicobar pigeon", false], ["Fairy Bluebird", false]]
+		}
+	}
+}

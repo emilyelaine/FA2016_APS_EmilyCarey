@@ -1,0 +1,17 @@
+{
+	"challenge":{
+		"exhibitName":"Gibbons",
+			"level1":{
+				"question":"Boy gibbons have black colored fur with white cheeks and girl gibbons are buff colored with a black spot on their head. Look around the exhibt to see how many boy and girl gibbons we have.",
+				"choices":[["2 Boy Gibbons", false], ["1 Boy and 1 Girl Gibbon", true], ["2 Girl Gibbons", false], ["2 Boys and 1 Girl Gibbon", false]]
+			},
+			"level2":{
+				"question":"Why do our gibbons stay on their island?",
+				"choices":[["They cannot swim.",true], ["They cannot walk on the ground and stay in the trees", false], ["They don't. They enjoy swimming in the moat.",false], ["They are afraid of the ducks that share their exhibit.", false]]
+			},
+			"level3":{
+				"question":"Male gibbons have black colored fur with white cheeks and Female gibbons are buff colored with a black spot on their head. If a baby gibbon is buff colored when it's born is it male or female? ",
+				"choices":[["Male",false], ["Female", false], ["You can't know. All babies are buff colored when they are born.",true], ["Trick question. All gibbon babies are born with black fur.", false]]
+			}
+	}
+}

@@ -17,26 +17,25 @@ class resultsViewController: UIViewController {
     func setExhibitName(name: String) {
         exhibitName.text = name
     }
-    
-    func setChallengeResults(resultsResponse: String) {
-        
-        results.text = resultsResponse
-        
+    func setChallengeResults() {
+        var resultsResponse = ""
         if challengeAnswer == true {
-            let resultsResponse = "Correct! You are on your way to becoming an animal expert."
+            resultsResponse = "Correct! You are on your way to becoming an animal expert."
             tryAgainButton.isHidden = true
         }
         else {
-            let resultsResponse = "That is not correct.  Select Try Again to choose a different answer."
+            resultsResponse = "That is not correct.  Select Try Again to choose a different answer."
             tryAgainButton.isHidden = false
         }
-    
+        
+        results.text = resultsResponse
+        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let exhibitChallenge = exhibitID+"TestChallenge"
         //Gets the URL of the JSON File
         let url = Bundle.main.url(forResource: exhibitChallenge, withExtension:"json", subdirectory:"exhibits")
         
@@ -72,7 +71,7 @@ class resultsViewController: UIViewController {
                                         //Runs the function that sets the Exhibit Name
                                         self.setExhibitName(name: challenge["exhibitName"] as! String)
                                         
-                           //             self.setChallengeResults(resultsResponse as! String)
+                                        self.setChallengeResults()
                                     }
                                     
                                     

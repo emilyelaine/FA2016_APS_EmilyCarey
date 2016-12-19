@@ -1,0 +1,17 @@
+{
+	"challenge":{
+		"exhibitName":"Tropical Reef",
+		"level1":{
+			"question":"How many different kinds of sharks do we have in our Tropical Reef tank?",
+			"choices":[["4",false], ["12",false], ["0",false], ["7",true]]
+		},
+		"level2":{
+			"question":"There is an albino shark in our Tropical Reef Tank.  What kind of shark is it?",
+			"choices":[["White Spotted Bamboo Shark",true], ["Zebra Shark",false], ["Coral Cat Shark",false], ["Port Jackson Shark",false]]
+		},
+		"level3":{
+			"question":"Coral reefs are like underwater rainforests.  In what way is a coral reef similar to a rainforest?",
+			"choices":[["They shelter the most diverse collection of plants and animals on earth.",true], ["Reefs and tropical rain forests occur in warm and cool climates.",false], ["The rainforests and reefs are growing and expanding each year.",false], ["Both are simple ecosystems.",false]]
+		}
+	}
+}

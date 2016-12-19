@@ -1,0 +1,17 @@
+{
+	"challenge":{
+		"exhibitName":"Nocturnal Animals",
+		"level1":{
+			"question":"Our Burmese Python may look small curled up but look around the exhibit to see how big she is all stretched out",
+					"choices":[["7.8 Feet",false], ["26.2 Feet",false], ["10.6 Feet",false], ["14.3 Feet",true]]
+		},
+		"level2":{
+			"quesiton":"How does the Chinchilla move around so well in the dark?",
+				"choices":[["It has excellent night vision",false], ["It uses whiskers to see and feel things around it",true], ["It uses echolocation, like bats",false], ["It can't move around well in the dark",false]]
+		},
+		"level3":{
+			"question":"The two-toed sloth is one slow moving animal.  To keep safe from predators, sloths have a few tricks up their sleeves to keep predators away.  Which one of these facts is NOT true?",
+			"choices":[["Slow Moving",false], ["Excellent Camouflage",false], ["Absence of smell",false], ["Hides in nest during the day",true]]
+		}
+	}
+}

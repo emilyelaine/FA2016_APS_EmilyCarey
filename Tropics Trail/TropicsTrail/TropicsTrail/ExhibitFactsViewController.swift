@@ -21,7 +21,10 @@ class ExhibitFactsViewController: UIViewController {
     func setExhibitCopy(name: String, overview: String, image: String, facts: Array<Any>) {
         exhibitName.text = name
         exhibitOverview.text = overview
+        var test = exhibitOverview.frame
+        print(test)
         exhibitOverview.sizeToFit()
+        print(test)
         
         //factCopy is an empty string to be populated with the facts
         var factCopy = ""
@@ -34,6 +37,9 @@ class ExhibitFactsViewController: UIViewController {
         //This line adds the copy to the facts lable after the loop has completed.
          exhibitFacts.text = factCopy
         
+        //This line then streches the fact label to fit its content
+        exhibitFacts.sizeToFit()
+        
         
         //This line of code places the Exhibit Facts below the Exhibit Overview by redrawing it based on it's own location and the bottom of the Overview
         exhibitFacts.frame = CGRect(x:exhibitFacts.frame.origin.x,y:exhibitOverview.frame.origin.y + exhibitOverview.frame.size.height+20,width:exhibitFacts.frame.size.width,height:exhibitFacts.frame.size.height)
@@ -41,8 +47,6 @@ class ExhibitFactsViewController: UIViewController {
         //Place Challenge Button below the Exhibit Facts by redrawing it based on it's own location and the bottom of Facts.
         challengeButton.frame = CGRect(x:challengeButton.frame.origin.x,y:exhibitFacts.frame.origin.y + exhibitFacts.frame.size.height+20,width:challengeButton.frame.size.width,height:challengeButton.frame.size.height)
 
-        //This line then streches the fact label to fit its content
-        exhibitFacts.sizeToFit()
         
         
         //This line sets the Exhibit Image to the image passed to the function
@@ -53,8 +57,6 @@ class ExhibitFactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
-        
         //Gets the URL of the JSON File
         let url = Bundle.main.url(forResource: "exhibitPage", withExtension:"json", subdirectory:"exhibits")
         
@@ -105,5 +107,4 @@ class ExhibitFactsViewController: UIViewController {
         task.resume()
     }
 }
-//function to Choose Challenge View Controller
 

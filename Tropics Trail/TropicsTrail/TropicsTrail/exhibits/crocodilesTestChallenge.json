@@ -1,0 +1,17 @@
+{
+	"challenge":{
+		"exhibitName": "Crocodiles",
+		"level1":{
+			"question":"The MN Zoo is home to two Dwarf Crocodiles.  Our crocodiles share their exhibit with another type of animal.  Can you spot them?",
+			"choices":[["Cichlids",true], ["Komodo Dragon",false], ["Freckled Ducks",false], ["Ring Tailed Lemur",false]]
+		},
+		"level2":{
+			"question":"There are three different species of African Crocodiles, what kind do you think we have here at the MN Zoo? Take a look at the exhibit and take a guess!",
+			"choices":[["Nile Crocodile",false], ["Dwarf Crocodile",true], ["Slender Snouted Crocodile",false], ["Toothy Crocodile"], false]
+		},
+		"level3":{
+			"question":"Each type of African crocodile lives in a different habitat and have bodies or skills that reflect how and where they live.  Looking at our Dwarf Crocodile, where would it be best suited to live.",
+			"choices":[["Deep Rivers",false], ["Forests",false], ["Fresh Water Lakes",true], ["Shallow Streams", true]]
+		}
+	}
+}

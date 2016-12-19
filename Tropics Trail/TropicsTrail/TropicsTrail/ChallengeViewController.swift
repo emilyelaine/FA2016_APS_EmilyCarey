@@ -9,13 +9,12 @@
 import UIKit
 
     var level = ""
-
-    let exhibitChallenge = exhibitID+"TestChallenge"
-    var MultiChoice1Answer = 0
-    var MultiChoice2Answer = 0
-    var MultiChoice3Answer = 0
-    var MultiChoice4Answer = 0
+    var MultiChoice1Answer = false
+    var MultiChoice2Answer = false
+    var MultiChoice3Answer = false
+    var MultiChoice4Answer = false
     var challengeAnswer = false
+    var exhibitChallenge = exhibitID+"TestChallenge"
 
 
 class ChallengeViewController: UIViewController {
@@ -35,13 +34,13 @@ class ChallengeViewController: UIViewController {
         QuestionLabel.text = question
         MultiChoice1.setTitle((choice1[0] as! String),for: .normal)
         print(choice1[1])
-        let MultiChoice1Answer = choice1[1]
+        MultiChoice1Answer = choice1[1] as! Bool
         MultiChoice2.setTitle((choice2[0] as! String),for: .normal)
-        let MultiChoice2Answer = choice2[1]
+        MultiChoice2Answer = choice2[1] as! Bool
         MultiChoice3.setTitle((choice3[0] as! String),for: .normal)
-        let MultiChoice3Answer = choice3[1]
+        MultiChoice3Answer = choice3[1] as! Bool
         MultiChoice4.setTitle((choice4[0] as! String),for: .normal)
-        let MultiChoice4Answer = choice4[1]
+        MultiChoice4Answer = choice4[1] as! Bool
 
         
         QuestionLabel.frame = CGRect(x:exhibitName.frame.origin.x,y:exhibitName.frame.origin.y + exhibitName.frame.size.height+50,width:QuestionLabel.frame.size.width,height:QuestionLabel.frame.size.height)
@@ -52,6 +51,8 @@ class ChallengeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let exhibitChallenge = exhibitID+"TestChallenge"
         
         if level1Selection == true {
             level = "level1"
@@ -65,13 +66,11 @@ class ChallengeViewController: UIViewController {
             level = "level3"
         }
         
-        
         //Gets the URL of the JSON File
         let url = Bundle.main.url(forResource: exhibitChallenge, withExtension:"json", subdirectory:"exhibits")
-        
         //Kicks off Code to Transform JSON file into readable arrays
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            
+        
             //Throws an error if JSON file is missing
             if error != nil {
                 print (error)
@@ -94,7 +93,7 @@ class ChallengeViewController: UIViewController {
                             if let selectedLevel = challenge[level] as? NSDictionary
                             {
                                 
-                                if let choices = selectedLevel["choices"] as? Array<Any> {
+                                if var choices = selectedLevel["choices"] as? Array<Any> {
                                     
                                     //Forces the UI to Reload right away
                                     DispatchQueue.main.async {
@@ -121,8 +120,10 @@ class ChallengeViewController: UIViewController {
         task.resume()
         
     }
+    
     @IBAction func MultiChoice1Selected(_ sender: Any) {
-        if MultiChoice1Answer == 0 {
+        challengeAnswer = false
+        if MultiChoice1Answer == true {
             print("That is Correct!")
             challengeAnswer = true
         }
@@ -132,7 +133,8 @@ class ChallengeViewController: UIViewController {
     }
     
     @IBAction func MultiChoice2Selected(_ sender: Any) {
-        if MultiChoice2Answer == 0 {
+        challengeAnswer = false
+        if MultiChoice2Answer == true {
             print("That is Correct!")
             challengeAnswer = true
         }
@@ -142,7 +144,8 @@ class ChallengeViewController: UIViewController {
     }
     
     @IBAction func MultiChoice3Selected(_ sender: Any) {
-        if MultiChoice3Answer == 0 {
+        challengeAnswer = false
+        if MultiChoice3Answer == true {
             print("That is Correct!")
             challengeAnswer = true
         }
@@ -152,7 +155,8 @@ class ChallengeViewController: UIViewController {
     }
     
     @IBAction func MultiChoice4Selected(_ sender: Any) {
-        if MultiChoice4Answer == 0 {
+        challengeAnswer = false
+        if MultiChoice4Answer == true {
             print("That is Correct!")
             challengeAnswer = true
         }
@@ -162,4 +166,3 @@ class ChallengeViewController: UIViewController {
     }
     
     }
-//function to Choose Challenge View Controller

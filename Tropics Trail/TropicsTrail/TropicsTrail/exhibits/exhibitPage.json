@@ -21,20 +21,20 @@
        "birds":{
            "name":"Tropical Birds",
            "image":"bird",
-           "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. South America is sometimes called the 'bird continent' for its diverse range of birds. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins.",
-           "facts":["birdFact1","birdFact2","birdFact3"]
+           "overview":"Of the more than 10,000 species of birds in the world, the majority are found in the tropics with 50 percent of all bird species found in the Amazon Basin and Indonesia. This diversity can be partly attributed to the multitude of fruits which provide sustenance for the large number of fruit-eating birds including toucans, oropendulas, parrots, parakeets, tanagers, cotingas, and manakins.",
+           "facts":["South America is sometimes called the 'bird continent' for its diverse range of birds.","Tropical birds need a lot of space like an aviary. They will get into trouble if they become bored."]
        },
        "reef":{
            "name":"Tropical Reef",
            "image":"reef",
-           "overview":"The Pacific reef tank or Tropical Reef in the Tropics building has similarities to the Atlantic Reef exhibit in Discovery Bay.  Both tanks exhibit artificial coral reefs.  The difference is in the Oceans they represent.  The largest difference is diversity of species. Estimates of 65 to 75 species of coral and 500 to 700 reef associated fish species live in the extended  Atlantic/Caribbean coral reef area.  This is in contrast to the over 700 coral species and over 3,000 reef associated fish in the Indo-Pacific coral reefs.",
-           "facts":["tropicReefFacts","tropicalReefFacts2"]
+           "overview":"The Pacific Reef tank or Tropical Reef in the Tropics building has similarities to the Atlantic Reef exhibit in Discovery Bay.  Both tanks exhibit artificial coral reefs.  The difference is in the Oceans they represent.  The largest difference is diversity of species. Estimates of 65 to 75 species of coral and 500 to 700 reef associated fish species live in the extended  Atlantic/Caribbean coral reef area.  This is in contrast to the over 700 coral species and over 3,000 reef associated fish in the Indo-Pacific coral reefs.",
+           "facts":["The Pacific Reef has larger, predetor like sharks while the Tropical Reef has smaller sharks and fish","Tropical Reef fish and sharks feed on invertebrates where the Pacific Reef fish and sharks will feed on other fish."]
        },
        "nocturnal":{
            "name":"Nocturnal Animals",
            "image":"nocturnal",
            "overview":"Nocturnal organisms are those that are active mainly at night and sleep during the day. Their activity pattern occurs in twenty-four hour cycles, known as a circadian rhythm. Nocturnal animals include bats, cats, owls, mice, scorpions, opossums, raccoons, coyotes, cockroaches, and moths.",
-           "facts":["nocturnalFacts","nocturnalFacts2"]
+           "facts":["Some nocturnal animals are awake at night to avoid day time predators.","Animals that hunt during the night have less competition for food."]
        }
    }
 }
